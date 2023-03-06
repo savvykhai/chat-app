@@ -1,8 +1,8 @@
 
 ### Links
 
-- [Solution URL here](https://your-solution-url.com)
-- [Live site URL](https://your-live-site-url.com)
+- [Solution URL here](https://github.com/savvykhai/chat-app.git)
+- [Live site URL](https://chat-rkc5ipd2e-savvykhai.vercel.app)
 
 ## My process
 
