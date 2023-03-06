@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+/* || RESET */
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	height: auto;
+}
+
+:root {
+	/* || COLORS */
+
+	/* TEXT COLOR */
+	--BGCOLOR: #fff;
+	--TOP-SUB-HEADING: hsl(276, 100%, 81%);
+	--CHAT-ON-THE-LEFT: hsl(276, 55%, 52%);
+	--CHAT-ON-THE-RIGHT: hsl(271, 15%, 43%);
+	--PLACE-HOLDER-TEXT: hsl(206, 6%, 79%);
+	--MAIN-HEADING: hsl(271, 36%, 24%);
+	--PARAGRAPH: hsl(270, 7%, 64%);
+
+	/* GRADIENT */
+	--FIRST-COLOR: hsl(293, 100%, 63%);
+	--SECONG-COLOR: hsl(264, 100%, 61%);
+
+	/* SECONDARY COLORS */
+	--INAPP-BGCOLOR: hsl(0, 0%, 100%);
+	--APP-BGCOLOR: hsl(270, 20%, 96%);
+	--SUBMIT-BUTTON-BG: hsl(271, 36%, 24%);
+	--RADIO-BUTTON-OUTLINE: hsl(289, 100%, 72%);
+}
+
+/* GENERAL STYLE */
+html::before {
+	content: "";
+	background-color: var(--SECONG-COLOR);
+	width: 40%;
+	height: 40%;
+	border-radius: 0 0 300px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+html::after {
+	content: "";
+	background-color: var(--APP-BGCOLOR);
+	width: 350px;
+	height: 600px;
+	border-radius: 300px 0 0 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Rubik', sans-serif;
+	min-height: 120vh;
+	position: relative;
+}
+
+/* MAIN */
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.outer-frame {
+	background-color: var(--BGCOLOR);
+	border-radius: 20px;
+	box-shadow: 0 0px 1px #fff;
+	width: min(100%, 300px);
+	height: auto;
+	margin: auto;
+	padding: 0.7rem;
+	position: relative;
+}
+
+.inner-frame {
+	height: auto;
+}
+
+.notch {
+	margin: auto;
+	width: 55%;
+	height: 27px;
+	border-radius: 40px;
+	background-color: #fff;
+	position: absolute;
+	left: 23%;
+	top: 0;
+}
+
+.user-profile {
+	background-image: linear-gradient(to right, var(--SECONG-COLOR), var(--FIRST-COLOR));
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 20px 20px 5px 5px;
+	padding: 1em;
+}
+
+.user-profile img[alt="back arrow"] {
+	width: 20px;
+	height: 20px;
+	border: none;
+}
+
+.user-profile img[alt="Profile Picture"] {
+	width: 30px;
+	height: 30px;
+	margin: 8px;
+	border-radius: 50px;
+	border: 1px solid var(--BGCOLOR);
+}
+
+.user-profile [alt="menu"] {
+	width: 10px;
+	border: none;
+	margin-left: 3.3em;
+}
+
+.profile-name {
+	color: #fff;
+	font-weight: bolder;
+	font-size: 15px;
+}
+
+.status {
+	color: var(--TOP-SUB-HEADING);
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+
+/* CHAT MENU */
+.chat-menu {
+	background-color: var(--APP-BGCOLOR);
+	padding: 0.5em;
+	border-radius: 0 0 20px 20px;
+}
+
+.first-chat div {
+	background-color: var(--TOP-SUB-HEADING);
+	color: var(--CHAT-ON-THE-LEFT);
+	border-radius: 5px 10px 10px 1px;
+	box-shadow: 0 0 1px var(--TOP-SUB-HEADING);
+	width: 170px;
+	font-size: 0.7rem;
+	margin-bottom: 1em;
+	padding: 5px;
+}
+
+.dogs-img {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 0.5em;
+	margin: 1rem 0;
+}
+
+.dogs-img img {
+	width: 50px;
+	height: 50px;
+	border-radius: 15px;
+	box-shadow: 0 0 1px #fff;
+}
+
+.response {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.response-div1 {
+	padding: 5px;
+	margin-bottom: 1em;
+	background-color: var(--BGCOLOR);
+	color: #000;
+	width: 170px;
+	font-size: 0.7rem;
+	border-radius: 15px 15px 5px 15px;
+	box-shadow: 0 1px 5px#3333338e;
+	padding: 0.5rem;
+}
+
+.response-div2 {
+	width: 110px;
+	padding: 5px;
+	margin-bottom: 1em;
+	background-color: var(--BGCOLOR);
+	color: #000;
+	border-radius: 15px 15px 5px 15px;
+	box-shadow: 0 1px 5px #33333376;
+	padding: 0.5rem;
+	font-size: 0.7rem;
+}
+
+.second-chat {
+	background-color: var(--TOP-SUB-HEADING);
+	color: var(--CHAT-ON-THE-LEFT);
+	border-radius: 5px 10px 10px 1px;
+	box-shadow: 0 0 1px var(--TOP-SUB-HEADING);
+	width: 170px;
+	font-size: 0.7rem;
+	margin-bottom: 1em;
+	padding: 5px;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	background-image: linear-gradient(to right, var(--FIRST-COLOR), var(--SECONG-COLOR));
+	color: var(--TOP-SUB-HEADING);
+	margin-bottom: 1em;
+	padding: 1em;
+	border-radius: 10px 10px 10px 2px;
+	width: 74%;
+	font-size: 0.7rem;
+}
+
+div input {
+	margin-right: 5px;
+}
+
+.price {
+	color: whitesmoke;
+	margin-left: 1.5em;
+	font-size: 1rem;
+	font-weight: bolder;
+}
+
+.price-2 {
+	margin-left: 3em;
+}
+
+.input-section {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 30px;
+	padding: 5px;
+	width: 100%;
+	height: 40px;
+	margin: 20px 0;
+}
+
+.input-section input {
+	border: none;
+	opacity: 50%;
+}
+
+.input-section input[type="image"] {
+	width: 30px;
+	height: 20px;
+	opacity: 100%;
+}
+
+.input-section input[alt="submit"] {
+	background-color: var(--SUBMIT-BUTTON-BG);
+	border-radius: 50px;
+	height: auto;
+}
+
+.paragraph {
+	margin: 1rem;
+	text-align: center;
+	line-height: 25px;
+}
+
+.paragraph h1 {
+	font-size: 2rem;
+	font-weight: bolder;
+	color: var(--MAIN-HEADING);
+	margin-bottom: 1em;
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 768px) {
+	html::before {
+		content: "";
+		background-image: linear-gradient(to bottom, var(--FIRST-COLOR), var(--SECONG-COLOR));
+		width: min(100%, 350px);
+		height: 600px;
+		border-radius: 0 0 300px 0;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+	}
+
+	html::after {
+		content: "";
+		background-color: var(--APP-BGCOLOR);
+		width: 350px;
+		height: 600px;
+		border-radius: 300px 0 0 0;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
+	}
+
+	.main {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.outer-frame {
+		background-color: var(--BGCOLOR);
+		border-radius: 20px;
+		box-shadow: 0 0px 1.5px #000;
+		width: min(100%, 300px);
+		height: auto;
+		margin: 1rem;
+		padding: 0.7rem;
+		position: relative;
+		bottom: -50px;
+		left: -50px;
+	}
+
+	.notch {
+		margin: auto;
+		width: 55%;
+		height: 30px;
+		border-radius: 40px;
+		background-color: #fff;
+		position: absolute;
+		left: 69px;
+		top: 0;
+	}
+
+	.user-profile {
+		background-image: linear-gradient(to right, var(--SECONG-COLOR), var(--FIRST-COLOR));
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		border-radius: 20px 20px 5px 5px;
+		padding: 1em;
+	}
+
+	.paragraph {
+		width: 370px;
+		margin-left: 4em;
+		line-height: 25px;
+		text-align: justify;
+	}
+
+}
+
+.footer a {
+	color: var(--FIRST-COLOR);
+}
+
+.footer {
+	background-color: whitesmoke;
+	position: fixed;
+	bottom: 0;
+	padding: 0.5em;
+	text-align: center;
+	width: 100%;
+}
