@@ -83,7 +83,7 @@ body {
 	box-shadow: 0 0 1px 5px #000;
 	width: min(100%, 300px);
 	height: auto;
-	margin: auto;
+	margin-top: 2em;
 	padding: 0.7rem;
 	position: relative;
 }
@@ -233,6 +233,18 @@ body {
 	width: 74%;
 	font-size: 0.7rem;
 }
+ 
+.button input[type="radio"] {
+	width: 15px;
+	height: 15px;
+	border: 1px solid var(--RADIO-BUTTON-OUTLINE);
+	border-radius: 50%;
+	-webkit-appearance: none;
+}
+
+.button input[type="radio"]:checked {
+	background: #fff;
+}
 
 div input {
 	margin-right: 5px;
@@ -282,6 +294,7 @@ div input {
 	margin: 1rem;
 	text-align: center;
 	line-height: 25px;
+	color: var(--PARAGRAPH);
 }
 
 .paragraph h1 {
@@ -365,8 +378,8 @@ div input {
 		text-align: justify;
 	}
 
-	.pragraph-h1 {
-		margin-top: 3.5em;
+	.paragraph h1 {
+		margin-top: 4em;
 	}
 
 }
