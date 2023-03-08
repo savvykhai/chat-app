@@ -225,6 +225,7 @@ body {
 .button {
 	display: flex;
 	align-items: center;
+	align-self: stretch;
 	background-image: linear-gradient(to right, var(--FIRST-COLOR), var(--SECONG-COLOR));
 	color: var(--TOP-SUB-HEADING);
 	margin-bottom: 1em;
@@ -234,9 +235,14 @@ body {
 	font-size: 0.7rem;
 }
  
+.button div {
+	display: flex; 
+	align-items: center;
+}
+ 
 .button input[type="radio"] {
-	width: 15px;
-	height: 15px;
+	width: 13px;
+	height: 13px;
 	border: 1px solid var(--RADIO-BUTTON-OUTLINE);
 	border-radius: 50%;
 	-webkit-appearance: none;
